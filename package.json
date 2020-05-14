@@ -1,0 +1,35 @@
+{
+  "name": "nextjs-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "v12.14.1"
+  },
+  "scripts": {
+    "dev": "nodemon -w server.js server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js",
+    "heroku-postbuild": "npm run build" 
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "auth0-js": "^9.13.2",
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "express-jwt": "^5.3.3",
+    "formik": "^2.1.4",
+    "js-cookie": "^2.2.1",
+    "jsonwebtoken": "^8.5.1",
+    "jwks-rsa": "^1.8.0",
+    "mongoose": "^5.5.10",
+    "next": "^9.3.6",
+    "next-compose-plugins": "^2.2.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

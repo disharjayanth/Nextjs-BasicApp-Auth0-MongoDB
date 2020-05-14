@@ -1,0 +1,20 @@
+.contact_static {
+    color: green;
+}
+
+header {
+    background: #333333;
+}
+
+header .navbar-brand {
+    color: #dc3545 !important;
+    font-weight: 900;
+}
+
+header .navbar-nav .nav-item {
+    color: #ffffff !important;
+}
+
+header.skyblue {
+    background: #6b27f2;
+}
