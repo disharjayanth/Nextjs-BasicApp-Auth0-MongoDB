@@ -5,7 +5,6 @@ import axios from 'axios'
 class UserForm extends Component {
 
     handleSubmit = (values, actions) => {
-        console.log(values)
         axios({
             method: 'POST',
             url: '/api/v1/users',
@@ -14,7 +13,6 @@ class UserForm extends Component {
                 'Content-type': 'application/json'
             }
         }).then((response) => {
-            console.log(response.data)
             actions.setSubmitting(false)
             actions.resetForm()
         })
