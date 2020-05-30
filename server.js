@@ -3,6 +3,7 @@ const next = require('next')
 const axios = require('axios')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
+const compression = require('compression')
 //middleware
 const serverAuth = require('./serverAuth')
 
@@ -32,6 +33,7 @@ const robotsOptions = {
 app.prepare()
 .then(() => {
     const server = express()
+    server.use(compression())
     server.use(bodyParser.json())
 
     server.get('/robots.txt', (req, res) => {
